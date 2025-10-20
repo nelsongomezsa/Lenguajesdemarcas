@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página</title>
+</head>
+<body>
+    <h1>Pepinillos Manolo</h1>
+    <h2>Pepinillos Manolo</h2>
+    <img src="pepinillos.jpg" title="Foto de varios pepinos" alt="Una foto de varios pepinos">
+    <a href="https://www.google.com/" target="_blank">Click para ir a google</a> 
+    <h3>Pepinillos Manolo</h3>
+    <p>Hola qué ase</p>
+    <p>Hola qué ase</p>
+    <ul>
+        <li><a href="https://www.google.com/"></ahref>Pepino moreno</a></li>
+        <li>Pepino albino</li>
+        <li>Pepino rubio</li>
+    </ul>
+
+    <table>
+            <thead>
+                <tr>
+                    <th>Nº de pedido</th>
+                    <th>Fecha</th>
+                    <th>Importe</th>
+                    <th>Ver</th>
+                    <th colspan="2">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1234</td>
+                    <td>12/12/2025</td>
+                    <td>225$</td>
+                    <td>clic</td>
+                    <td>editar</td>
+                    <td>borrar</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total de pedidos</td>
+                </tr>
+            </tfoot>
+    </table>
+<form action="">
+
+    <fieldset>
+<p></p>
+    <label>Nombre:
+    <input type="text" placeholder="escribe aqui tu nombre" required>
+    </label>
+   <p></p> 
+    <label>Edad:
+    <input min="0" max="100" step="0.1" type="number" placeholder = "escribe aqui tu edad">
+    </label>
+<p></p>
+    <label>Fecha de nacimiento:
+    <input type="date" placeholder = "escribe aquí tu fecha">
+    </label>
+    <p></p>
+    <label>Email:
+    <input type="email" placeholder = "escribe aquí tu email">
+    </label>
+    <p></p>
+     <label>telefono:
+    <input type="tel" placeholder = "escribe aquí tu telefono">
+    </label>
+    <p></p>
+      <label>Contraseña:
+    <input type="password" minlength="8">
+    </label>
+    </fieldset>
+    <button type="submit"> Enviar</button>
+
+    <fieldset>
+        <legend>Fecha,Hora y numero</legend>
+        <p></p>
+        <label> Hora inicio:
+        <input type="time" step="60">
+        </label>
+        <p></p>
+        <label> Cita:
+        <input type="datetime-local" step="60">
+        <p></p>
+        </label>
+         <label> Mes:
+        <input type="month" >
+        </label>
+        <p></p>
+         </label>
+         <label> Semana:
+        <input type="week" >
+        </label>
+
+    <p></p>
+    
+     </label>
+         <label>Prioridad:
+        <input type="range" min="0" max="1000" value="90" oninput="document.getElementById('ValorRango').value=this.value">
+        </label>
+        <output id="ValorRango">50</output>
+        <p></p>
+         </label>
+         <label> Color favorito
+        <input type="color" value="#555555">
+        </label>
+        <p></p>
+        <fieldset>
+            <legend>Opciones y listas</legend>
+            <input type="radio" name="tipo_pepino" value="moreno">
+            <LAbel>Moreno</LAbel>
+
+            <input type="radio" name="tipo_pepino" value="kirby">
+            <LAbel>kirby</LAbel>
+
+            <input type="radio" name="tipo_pepino" value="Rubio">
+            <LAbel>Rubio</LAbel>
+            </fieldset>
+            <fieldset>
+            <legend>Extras</legend>
+            <input type="checkbox" name="Extras" value="costillet" >
+            <label >costillet</label>
+            <p></p>
+            <input type="checkbox" name="Extras" value="nocilla" >
+            <label >nocilla</label>
+            <p></p>
+            
+         </fieldset>
+         <fieldset>
+            <label> Variedad</label>
+            <select name="s-variedad" id="s-variedad">
+
+                <option value="sin opcipon">--------------</option>
+                <optgroup label="clasicos">
+                <option value="holandes">holandes</option>
+                <option value="spain">spain</option>
+                <option value="portugues">portugues</option>
+                </optgroup>
+                <optgroup label="modernos">
+                <option value="blanco">blanco</option>
+
+
+                </optgroup>
+                
+
+            </select>
+            <p></p>
+            <Label>lotes (puedes elegir varios)</Label>
+            <select  id="lotes" name="lotes[]" multiple size="4">
+                <option value="lote1">lote1</option>
+                <option value="lote2">lote2</option>
+                <option value="lote3">lote3</option>
+                <option value="lote4">lote4</option>
+
+            </select>
+
+
+
+
+
+         </fieldset>
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+    
+</form>
+<button type="submit">Enviar</button>
+</body>
+</html
